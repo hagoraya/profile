@@ -1,6 +1,9 @@
 import HighlightText from "../components/HighlightText";
 import { Container, Row, Col } from "react-bootstrap";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 export default function Home() {
   return (
     <Container className='main_div'>
@@ -45,6 +48,14 @@ export default function Home() {
               hyperlink='https://www.instagram.com/ollie_goraya/'
             />
           </p>
+        </div>
+        <div style={{ width: "60%" }}>
+          <a style={{ marginRight: "1em" }} href='https://github.com/hagoraya'>
+            <FontAwesomeIcon icon={faGithub} size='2x' href='' />
+          </a>
+          <a href='https://www.linkedin.com/in/hagoraya/'>
+            <FontAwesomeIcon icon={faLinkedin} size='2x' />
+          </a>
         </div>
       </div>
     </Container>
