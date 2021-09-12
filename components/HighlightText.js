@@ -3,7 +3,7 @@ const HighlightText = ({ text, backgroundColor, hyperlink }) => {
     <a
       href={hyperlink}
       target='_blank'
-      style={{ backgroundColor: backgroundColor }}
+      style={{ backgroundColor: backgroundColor, color: "black" }}
     >
       {text}
     </a>

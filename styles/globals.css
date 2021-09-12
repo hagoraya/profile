@@ -20,3 +20,17 @@ a {
   height: 100%;
   width: 100%;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #212121;
+    color: antiquewhite;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: transparent;
+    color: black;
+  }
+}
