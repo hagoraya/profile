@@ -1,17 +1,12 @@
-.centered{
+.main_div {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 550px;
+  justify-content: center;
   flex-direction: column;
-  width: 550px;
+  height: 100%;
 }
 
-.content{
-  text-align: left;
-}
-
-.myname{
+.myname {
   font-size: 3em;
   font-weight: bold;
   margin-top: "100px";

@@ -1,29 +1,52 @@
-import HighlightText from "../components/HighlightText"
+import HighlightText from "../components/HighlightText";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Home() {
   return (
-   <div className="centered">
-
-     <div className="content">
-     <div>
-       Hi there, Im
-     </div>
-     <div className="myname">Harpreet Goraya</div>
-      <div>
-      I'm a software engineer studying at the University of Waterloo. Currently, I'm working on the frontend platform team at Wealthsimpleand helping organize Hack The North.
-
-Previously, I worked on the conversion team at Vidyard ,led development of Reebee's largest annual contest, reaching over 2 million users and worked on the web team at Waterloop.
-
-Most recently I worked on, Explore Spotify, which allows users to view their top tracks, artists and recently played songs.
-
-On the side I'm working in the founding team of a South-Asian media startup, The Capsule.
+    <Container className='main_div'>
+      <div className='main_div'>
+        <div style={{ width: "60%" }}>Hi there, I'm</div>
+        <div className={"myname"} style={{ width: "60%" }}>
+          Harpreet Goraya
+        </div>
+        <div style={{ width: "60%" }}>
+          <p>
+            Im a software developer from Toronto with a Bs.c in comuter science
+            from{" "}
+            <HighlightText
+              text='York University'
+              backgroundColor='#ffadad'
+              hyperlink='https://yorku.ca/'
+            />{" "}
+            and I like building things that live in the internet.
+          </p>
+          <p>
+            Im currently working as developer at{" "}
+            <HighlightText
+              text='Bluroot'
+              backgroundColor='#9bf6ff'
+              hyperlink='https://bluroot.ca/'
+            />
+            , working on frontend and backend products using React, Node and
+            Rust.
+          </p>
+          Previously, I interned at{" "}
+          <HighlightText
+            text='Artitude Canada'
+            backgroundColor='#ffd6a5'
+            hyperlink='https://www.linkedin.com/in/artitude-canada-6706bb137/'
+          />{" "}
+          creating and managing their websites and media feeds.
+          <p>
+            In my free time I like hiking, eating food & playing with my dog{" "}
+            <HighlightText
+              text='Ollie'
+              backgroundColor='#caffbf'
+              hyperlink='https://www.instagram.com/ollie_goraya/'
+            />
+          </p>
+        </div>
       </div>
-
-     
-     </div>
-
-    </div>
-  )
+    </Container>
+  );
 }
-
-
