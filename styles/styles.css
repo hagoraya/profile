@@ -1,0 +1,18 @@
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  flex-direction: column;
+  width: 550px;
+}
+
+.content{
+  text-align: left;
+}
+
+.myname{
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: "100px";
+}
